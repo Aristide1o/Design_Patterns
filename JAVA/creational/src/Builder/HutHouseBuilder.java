@@ -13,22 +13,27 @@ public class HutHouseBuilder implements HouseBuilder {
         this.house = new House();
     }
 
+    @Override
     public void buildBasement(){
         house.setBasement("Stones");
     }
 
+    @Override
     public void buildStructure(){
         house.setStructure("Wood Beams");
     }
 
+    @Override
     public void buildRoof(){
         house.setRoof("Weeds");
     }
 
+    @Override
     public void buildInterior(){
         house.setInterior("Nothing");
     }
 
+    @Override
     public House getHouse(){
         return this.house;
     }
