@@ -9,6 +9,8 @@ package Command;
  */
 public class GetCommand implements Command {
 
+    private RESTResource resource;
+
     public GetCommand(RESTResource res){
         this.resource = res;
     }
@@ -17,6 +19,4 @@ public class GetCommand implements Command {
     public void execute(){
         resource.get();
     }
-
-    private RESTResource resource;
 }

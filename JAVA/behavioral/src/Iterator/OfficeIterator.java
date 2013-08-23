@@ -10,28 +10,27 @@ import java.util.Iterator;
  */
 public class OfficeIterator<Employee> implements Iterator<Object> {
 
-    private ArrayList<?> office;
+    private ArrayList<?> team;
     private int position;
 
     public OfficeIterator(Office officeBase){
-        this.office = officeBase.getOffice();
+        this.team = officeBase.getTeam();
     }
-
 
     @Override
     public boolean hasNext() {
-        return position < office.size();
+        return position < team.size();
     }
 
     @Override
     public Object next() {
-        Object employeeObj = office.get(position);
+        Object employeeObj = team.get(position);
         position++;
         return employeeObj;
     }
 
     @Override
     public void remove() {
-        office.remove(position);
+        team.remove(position);
     }
 }

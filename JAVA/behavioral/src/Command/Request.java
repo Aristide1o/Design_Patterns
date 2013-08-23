@@ -9,6 +9,8 @@ package Command;
  */
 public class Request {
 
+    private Command command;
+
     public Request(Command com){
         this.command = com;
     }
@@ -16,6 +18,4 @@ public class Request {
     public void send(){
         command.execute();
     }
-
-    private Command command;
 }

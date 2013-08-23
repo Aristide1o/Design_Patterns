@@ -9,6 +9,8 @@ package Command;
  */
 public class DeleteCommand implements Command {
 
+    RESTResource resource;
+
     public DeleteCommand(RESTResource res){
         this.resource = res;
     }
@@ -17,6 +19,4 @@ public class DeleteCommand implements Command {
     public void execute(){
         resource.delete();
     }
-
-    RESTResource resource;
 }

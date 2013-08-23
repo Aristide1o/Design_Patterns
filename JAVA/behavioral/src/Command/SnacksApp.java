@@ -17,21 +17,21 @@ public class SnacksApp {
         // delete the same
 
         Peanut peanut = new Peanut();
-        GetCommand getPeanut = new GetCommand(peanut);
-        Request getPeanutRequest = new Request(getPeanut);
+        GetCommand getPeanutCommand = new GetCommand(peanut);
+        Request getPeanutRequest = new Request(getPeanutCommand);
         getPeanutRequest.send();
 
-        DeleteCommand deletePeanut = new DeleteCommand(peanut);
-        Request deletePeanutRequest = new Request(deletePeanut);
+        DeleteCommand deletePeanutCommand = new DeleteCommand(peanut);
+        Request deletePeanutRequest = new Request(deletePeanutCommand);
         deletePeanutRequest.send();
 
         Raisin raisin = new Raisin();
-        GetCommand getRaisin = new GetCommand(raisin);
-        Request getRaisinRequest = new Request(getRaisin);
+        GetCommand getRaisinCommand = new GetCommand(raisin);
+        Request getRaisinRequest = new Request(getRaisinCommand);
         getRaisinRequest.send();
 
-        DeleteCommand deleteRaisin = new DeleteCommand(raisin);
-        Request deleteRaisinRequest = new Request(deleteRaisin);
+        DeleteCommand deleteRaisinCommand = new DeleteCommand(raisin);
+        Request deleteRaisinRequest = new Request(deleteRaisinCommand);
         deleteRaisinRequest.send();
     }
 }

@@ -10,14 +10,14 @@ import java.util.Iterator;
  */
 public class Office implements Iterable<Employee> {
 
-    private ArrayList<Employee> office = new ArrayList<Employee>();
+    private ArrayList<Employee> team = new ArrayList<Employee>();
 
-    public Office(ArrayList office){
-        this.office = office;
+    public Office(ArrayList team){
+        this.team = team;
     }
 
-    public ArrayList getOffice(){
-        return office;
+    public ArrayList getTeam(){
+        return team;
     }
 
     @Override
