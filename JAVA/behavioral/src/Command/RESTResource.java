@@ -8,6 +8,6 @@ package Command;
  * Abstract Receiver
  */
 public interface RESTResource {
-    public abstract void get();
-    public abstract void delete();
+    public void get();
+    public void delete();
 }
