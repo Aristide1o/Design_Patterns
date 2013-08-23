@@ -13,7 +13,7 @@ public class PersonFactory {
         // Based on input, instantiate a Person object.
         if ("Kenyan".equals(personNationality) || "Tanzanian".equals(personNationality))
             person = new Mswahili();
-        else if ("irish".equals(personNationality) || "Scottish".equals(personNationality))
+        else if ("Irish".equals(personNationality) || "Scottish".equals(personNationality))
             person = new Englishman();
 
         return person;
